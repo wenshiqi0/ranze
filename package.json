@@ -1,0 +1,32 @@
+{
+  "name": "ranze",
+  "version": "1.0.0",
+  "main": "out/server/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node out/server/index.js",
+    "build:server": "cd ./server && tsc",
+    "build:client": "webpack",
+    "watch:server": "cd ./server && tsc -w",
+    "watch:client": "webpack -w"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.9.1",
+    "fs-extra": "^5.0.0",
+    "koa": "^2.5.0",
+    "koa-router": "^7.4.0",
+    "socket.io": "^2.1.0",
+    "vega-embed": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.2",
+    "@types/koa": "^2.0.45",
+    "@types/koa-router": "^7.0.27",
+    "@types/node": "^9.6.5",
+    "@types/socket.io": "^1.4.33",
+    "ts-loader": "^4.2.0",
+    "typescript": "^2.8.1",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  }
+}
